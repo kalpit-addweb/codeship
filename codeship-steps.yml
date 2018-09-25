@@ -15,7 +15,33 @@
   tag: master
   service: codeship_example
   command: composer install
+
 - name: Clear cache
+  tag: master
+  service: codeship_example
+  command: php artisan cache:clear
+
+- name: Run npm install
+  tag: master
+  service: codeship_example
+  command: npm install
+
+- name: Run npm dev
+  tag: master
+  service: codeship_example
+  command: npm run dev
+
+- name: Run npm dev
+  tag: master
+  service: codeship_example
+  command: php artisan migrate
+
+- name: Run npm dev
+  tag: master
+  service: codeship_example
+  command: php artisan db:seed
+
+- name: Clear caches
   tag: master
   service: codeship_example
   command: php artisan cache:clear
