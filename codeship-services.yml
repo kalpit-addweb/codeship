@@ -9,7 +9,7 @@ codeship_example:
     image: codeship_example
     dockerfile: Dockerfile
   ports:
-    - 9000:9000
+    - 9001:9000
   volumes:
     - .:/var/www/html
   links:
