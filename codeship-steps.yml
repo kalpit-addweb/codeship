@@ -10,11 +10,11 @@
   tag: master
   service: codeship_example
   command: echo "Deploy here!"
-- name: example_tagged_step
+- name: Clear cache
   tag: master
   service: codeship_example
   command: php artisan cache:clear
-- name: example_tagged_step
+- name: Run composer install
   tag: master
   service: codeship_example
   command: composer install
