@@ -1,6 +1,6 @@
 FROM php:7.2-fpm
 
-# install the PHP extensions we need
+##comment added# install the PHP extensions we need
 RUN set -ex; \
 	\
 	savedAptMark="$(apt-mark showmanual)"; \
